@@ -22,7 +22,7 @@ public class IntegerListEditor extends PropertyEditorSupport {
                     if (NumberUtils.isParsable(s)) {
                         return Integer.parseInt(s);
                     } else {
-                        throw new FizzBuzzBazzBadRequestException(String.format("Cannot convert \"%s\" to integer", s));
+                        throw new FizzBuzzBazzBadRequestException(String.format("Cannot convert '%s' to integer", s));
                     }
                 })
                 .boxed()
