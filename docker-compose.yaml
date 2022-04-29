@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  fizzbuzz:
+    container_name: fizzbuzz
+    image: sudijovski/fizzbuzz:latest
+    ports:
+      - "8080:8080"
